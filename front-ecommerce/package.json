@@ -1,0 +1,57 @@
+{
+  "name": "front-ecommerce",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.5.0",
+    "concurrently": "^5.3.0",
+    "express-fileupload": "^1.1.10",
+    "infinite-react-carousel": "^1.2.11",
+    "jquery": "^3.5.1",
+    "jspdf": "^2.1.0",
+    "jspdf-react": "^1.0.11",
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.1.1",
+    "react-browser-router": "^2.1.2",
+    "react-dom": "^16.13.1",
+    "react-file-reader": "^1.1.4",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.4.3",
+    "react-simple-maps": "^0.12.1",
+    "read-file": "^0.2.0",
+    "sha1": "^1.1.1"
+  },
+  "scripts": {
+    "start": "PORT=3005 concurrently \"react-scripts start\" \"nodemon server.js\" ",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://127.0.0.1:4242/",
+  "secure": false,
+  "devDependencies": {
+    "file-loader": "^6.0.0"
+  }
+}

@@ -1,0 +1,77 @@
+let id_pic1 = 0;
+        let id_pic2 = 0;
+        let id_pic3 = 0;
+        let id_pic4 = 0;
+                
+
+        function check_if_file_exist1(id_pic1){
+            
+            if (fs.existsSync('src/assets/IMG/Articles/img_product_'+id_pic1)) {
+                id_pic1++;
+                check_if_file_exist1(id_pic1);
+            }
+            else{
+                let file_name1='img_product_'+id_pic1;
+                
+                fs.writeFile('src/assets/IMG/Articles/'+file_name1, req.body.formAddProduct['photo_1'], function(error){
+                    if(error){console.log(error)};
+                });
+                req.body.formAddProduct['photo_1']=file_name1;
+            }
+            
+        }
+        check_if_file_exist1(id_pic1);
+
+        function check_if_file_exist2(id_pic2){
+            
+            if (fs.existsSync('src/assets/IMG/Articles/img_product_'+id_pic2)) {
+                id_pic2++;
+                check_if_file_exist2(id_pic2);
+            }
+            else{
+                let file_name2='img_product_'+id_pic2;
+                
+                fs.writeFile('src/assets/IMG/Articles/'+file_name2, req.body.formAddProduct['photo_2'], function(error){
+                    if(error){console.log(error)};
+                });
+                req.body.formAddProduct['photo_2']=file_name2;
+            }
+            
+        }
+        check_if_file_exist2(id_pic2);
+
+        function check_if_file_exist3(id_pic3){
+            
+            if (fs.existsSync('src/assets/IMG/Articles/img_product_'+id_pic3)) {
+                id_pic3++;
+                check_if_file_exist3(id_pic3);
+            }
+            else{
+                let file_name3='img_product_'+id_pic3;
+                
+                fs.writeFile('src/assets/IMG/Articles/'+file_name3, req.body.formAddProduct['photo_3'], function(error){
+                    if(error){console.log(error)};
+                });
+                req.body.formAddProduct['photo_3']=file_name3;
+            }
+            
+        }
+        check_if_file_exist3(id_pic3);
+    
+        function check_if_file_exist4(id_pic4){
+            
+            if (fs.existsSync('src/assets/IMG/Articles/img_product_'+id_pic4)) {
+                id_pic4++;
+                check_if_file_exist4(id_pic4);
+            }
+            else{
+                file_name4='img_product_'+id_pic4;
+                
+                fs.writeFile('src/assets/IMG/Articles/'+file_name4, req.body.formAddProduct['photo_4'], function(error){
+                    if(error){console.log(error)};
+                });
+                req.body.formAddProduct['photo_4']=file_name4;
+            }
+            
+        }
+        check_if_file_exist4(id_pic4);

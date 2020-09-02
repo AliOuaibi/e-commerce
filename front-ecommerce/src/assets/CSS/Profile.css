@@ -1,0 +1,219 @@
+.profile_nav {
+  height: 40px;
+  width: 40px;
+  border-radius: 100px;
+  background-image: url("../IMG/Profile/default.png");
+  background-size: cover;
+  background-size: 110%;
+  background-position: center;
+}
+
+.profil_onglet {
+  padding: 20px;
+  margin: 0px;
+  font-size: 14px;
+  border: solid 1px #b7b7b7;
+  line-height: 60px;
+  vertical-align: middle;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: space-between;
+  transition-duration: 0.5s;
+}
+.profil_onglet .profile_pic {
+  height: 120px;
+  width: 120px;
+  border-radius: 100px;
+  margin: auto;
+  margin-bottom: 20px;
+  background-image: url("../IMG/Profile/default.png");
+  background-size: cover;
+  background-size: 110%;
+  background-position: center;
+}
+.profil_onglet .info {
+  margin: auto;
+  width: max-content;
+  height: max-content;
+}
+
+.legende {
+  position: relative;
+  bottom: 100px;
+  width: max-content;
+  left: 20px;
+}
+.legende .true {
+  height: 30px;
+  width: 50px;
+  background-color: #00bab2;
+  margin: 5px;
+}
+.legende .false {
+  height: 30px;
+  width: 50px;
+  background-color: black;
+  margin: 5px;
+}
+
+#profile {
+  padding: 20px;
+}
+#profile form {
+  margin-top: 10px;
+  border: solid 1px #b7b7b7;
+  padding: 10px;
+}
+#profile form .input_button {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+#profile form .input_button input[type=button] {
+  margin-top: 10px;
+  border-radius: 0px;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 5px;
+}
+#profile form input[type=text],
+#profile form input[type=email],
+#profile form input[type=password] {
+  border: none;
+  border-bottom: solid #c2c2c2 1px;
+  border-radius: 0px;
+  width: 100%;
+  height: 20px;
+}
+#profile form label {
+  font-size: 8px;
+  margin-top: 5px;
+}
+#profile form h1 {
+  margin: 0px;
+  color: black;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+#profile form h1 .dot {
+  color: #d37566;
+}
+#profile form .form1 {
+  color: #8f8f8f;
+}
+#profile form .form1 .infos_pic {
+  display: flex;
+  justify-content: space-between;
+}
+#profile form .form1 .infos_pic .infos .nom_prenom {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+}
+#profile form .form1 .infos_pic .infos .nom_prenom div {
+  margin: 0px;
+}
+#profile form .form1 .infos_pic .section_profile_pic .profile_pic {
+  height: 100%;
+  background-image: url("../IMG/Profile/default.png");
+  background-size: cover;
+  background-size: 110%;
+  background-position: center;
+}
+#profile form .form2 {
+  color: #8f8f8f;
+}
+#profile form .form2 .password3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.myOrders {
+  height: 390px;
+  overflow: scroll;
+  padding: 10px;
+}
+.myOrders .order {
+  height: 260px;
+  border: 1px solid #cbcbcb;
+  margin-bottom: 20px;
+}
+.myOrders .order:hover {
+  background-color: whitesmoke;
+}
+.myOrders .order .orderInfo {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 10px;
+}
+.myOrders .order .orderInfo .num_date {
+  margin: 0px;
+}
+.myOrders .order .orderInfo .num_date .orderNum {
+  margin: 0px;
+  font-size: 15px;
+}
+.myOrders .order .orderInfo .num_date .orderDate {
+  font-size: 10px;
+  margin: 0px;
+  color: #cbcbcb;
+}
+.myOrders .order .orderInfo .buttonDownload {
+  background-color: green;
+  color: white;
+  padding: 2px;
+}
+.myOrders .order .orderInfo2 {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+.myOrders .order .orderInfo2 .count_price .orderCount {
+  font-size: 10px;
+  margin: 0px;
+  color: #cbcbcb;
+}
+.myOrders .order .orderInfo2 .count_price .orderPrice {
+  margin: 0px;
+}
+.myOrders .showArticles {
+  height: 160px;
+  margin: auto;
+  display: flex;
+  padding: 5px;
+  border-bottom: solid 1px #cbcbcb;
+}
+.myOrders .showArticles .article {
+  height: 140px;
+  border: solid 1px #cbcbcb;
+  width: 150px;
+  margin-left: 10px;
+  padding: 10px;
+  background-color: white;
+}
+.myOrders .showArticles .article .picture {
+  margin: auto;
+  margin-top: 2px;
+  height: 80px;
+  width: 130px;
+}
+.myOrders .showArticles .article p {
+  margin: 0px;
+}
+.myOrders .showArticles .article .name {
+  font-size: 10px;
+}
+.myOrders .showArticles .article .quantity {
+  font-size: 8px;
+  color: #cbcbcb;
+}
+.myOrders .showArticles .article .total {
+  font-size: 15px;
+  text-align: right;
+  position: relative;
+  bottom: 15px;
+}
+
+/*# sourceMappingURL=Profile.css.map */

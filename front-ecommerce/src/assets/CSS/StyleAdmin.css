@@ -1,0 +1,865 @@
+.homeAdmin {
+  padding-top: 80px;
+  width: 100%;
+}
+.homeAdmin .banniereAdmin {
+  height: 90px;
+  width: 100%;
+  background-color: #a56e2e;
+  background-image: url("../IMG/Admin/patchwork.png");
+  background-size: cover;
+  background-position: center;
+}
+.homeAdmin .banniereAdmin .title {
+  margin: auto;
+  width: max-content;
+  background-color: black;
+  position: relative;
+  top: 30px;
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+  padding: 5px;
+}
+.homeAdmin .interfaceAdmin {
+  padding: 20px;
+  padding-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.homeAdmin .intro {
+  padding-left: 100px;
+}
+@media screen and (max-width: 400px) {
+  .homeAdmin .intro {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+.homeAdmin .intro .logo {
+  font-size: 160px;
+  margin: 0px;
+  width: max-content;
+}
+@media screen and (max-width: 780px) {
+  .homeAdmin .intro .logo {
+    font-size: 100px;
+  }
+  .homeAdmin .intro .dot {
+    color: #d37566;
+  }
+}
+.homeAdmin .intro .button {
+  background-color: #f9cca5;
+  width: max-content;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+}
+.homeAdmin .ongletsAdmin {
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+}
+.homeAdmin .ongletsAdmin a {
+  margin: 0px;
+  color: black;
+}
+.homeAdmin .ongletsAdmin .button {
+  margin: 0px;
+  font-size: 14px;
+  border: solid 1px #b7b7b7;
+  height: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  transition-duration: 0.5s;
+}
+.homeAdmin .ongletsAdmin .button .icon {
+  height: 30px;
+  width: 30px;
+  background-color: black;
+  border-radius: 40px;
+  vertical-align: middle;
+  align-self: center;
+  transition-duration: 0.5s;
+}
+.homeAdmin .ongletsAdmin .button .icon i {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  position: relative;
+  bottom: 9px;
+  width: 100%;
+}
+.homeAdmin .ongletsAdmin .button:hover {
+  background-color: whitesmoke;
+}
+.homeAdmin .ongletsAdmin .button:hover .icon {
+  background-color: #a56e2e;
+}
+.homeAdmin .board {
+  border: solid 1px #b7b7b7;
+  height: 400px;
+}
+
+.target {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+.target:target {
+  display: block;
+}
+
+#add_product {
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  overflow: scroll;
+}
+#add_product p {
+  margin: 0px;
+}
+#add_product form {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+#add_product form .section1 {
+  height: 100%;
+}
+#add_product form .section1 .main_picture {
+  background-color: whitesmoke;
+  height: 250px;
+}
+#add_product form .section1 i {
+  color: white;
+  text-align: center;
+  padding-top: 70px;
+  font-size: 100px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+#add_product form .section1 .selects {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+#add_product form .section1 .selects select {
+  height: 30px;
+  border-radius: 0px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+#add_product form .section2 {
+  height: 100%;
+  padding-left: 20px;
+}
+#add_product form .section2 input[name=name] {
+  border: none;
+  border-radius: 0px;
+  border-bottom: solid whitesmoke;
+  height: 50px;
+  font-size: 30px;
+  width: 100%;
+}
+#add_product form .section2 input[name=name]::placeholder {
+  color: #e1e1e1;
+}
+#add_product form .section2 .selects {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+#add_product form .section2 .selects select {
+  height: 30px;
+  border-radius: 0px;
+  margin-right: 20px;
+}
+#add_product form .section2 .genre_radio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#add_product form .section2 .genre_radio label {
+  font-size: 12px !important;
+  position: relative;
+  bottom: 2px;
+}
+#add_product form .section2 .colors {
+  display: flex;
+  flex-wrap: wrap;
+}
+#add_product form .section2 .colors .color {
+  height: 15px;
+  width: 15px;
+  border: solid #8f8f8f 1px;
+  margin-left: 4px;
+}
+#add_product form .section2 .colors .beige {
+  background-color: #f9cca5;
+}
+#add_product form .section2 .colors .blanc {
+  background-color: white;
+}
+#add_product form .section2 .colors .bleu {
+  background-color: #2580d0;
+}
+#add_product form .section2 .colors .vert {
+  background-color: #3b803b;
+}
+#add_product form .section2 .colors .rose {
+  background-color: pink;
+}
+#add_product form .section2 .colors .violet {
+  background-color: #9f369f;
+}
+#add_product form .section2 .colors .rouge {
+  background-color: #d80a0a;
+}
+#add_product form .section2 .colors .jaune {
+  background-color: #fcd254;
+}
+#add_product form .section2 .colors .orange {
+  background-color: #f4964a;
+}
+#add_product form .section2 .colors .marron {
+  background-color: #a56e2e;
+}
+#add_product form .section2 .colors .noir {
+  background-color: black;
+}
+#add_product form .section2 .colors .gris {
+  background-color: #8f8f8f;
+}
+#add_product form .section2 .colors .or {
+  background: linear-gradient(#ffa824, #ffde3b);
+}
+#add_product form .section2 .colors .argent {
+  background: linear-gradient(#9d9d9d, #eaeaea);
+}
+#add_product form .section2 .colors .null .line1 {
+  width: 18px;
+  height: 18px;
+  border-bottom: 1px solid red;
+  -webkit-transform: translateY(-9px) translateX(4px) rotate(45deg);
+}
+#add_product form .section2 textarea {
+  height: 30px;
+  width: 100%;
+  border-radius: 0px;
+}
+#add_product form .section2 p {
+  margin: 0px;
+  margin-top: 20px;
+}
+#add_product form .section2 .pics {
+  display: flex;
+  justify-content: space-between;
+}
+#add_product form .section2 .pics .min_pic {
+  height: 70px;
+  background-color: whitesmoke;
+  margin-top: 10px;
+}
+#add_product form .section2 .pics .min_pic i {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20px;
+}
+#add_product form .section2 .price_submit {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+}
+#add_product form .section2 .price_submit input[name=price] {
+  width: 50px;
+  height: 30px;
+  border-radius: 0px;
+  border: solid 1px;
+  margin-right: 10px;
+}
+
+#edit_product {
+  justify-content: space-between;
+}
+#edit_product .product_form {
+  display: flex;
+  height: 390px;
+}
+#edit_product .allProduct {
+  overflow: scroll;
+  border-right: solid 1px #8f8f8f;
+  padding: 5px;
+}
+#edit_product .allProduct .article {
+  display: flex;
+  border-bottom: solid 1px #8f8f8f;
+  padding: 5px;
+  height: 80px;
+}
+#edit_product .allProduct .article .info {
+  width: 100%;
+  padding-left: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#edit_product .allProduct .article .info .name {
+  font-size: 10px;
+}
+#edit_product .allProduct .article .info .association {
+  font-size: 8px;
+}
+#edit_product .allProduct .article .info .price {
+  align-self: flex-end;
+  font-size: 10px;
+}
+#edit_product .allProduct .article .info .edit_button {
+  border: solid #8f8f8f 1px;
+  padding: 2px;
+  font-size: 10px;
+  width: max-content;
+  align-self: flex-end;
+  text-align: center;
+  cursor: pointer;
+}
+#edit_product #edit_product_form {
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 390px;
+  overflow: scroll;
+}
+#edit_product #edit_product_form .stock {
+  border: solid 1px #8f8f8f;
+}
+#edit_product #edit_product_form .stock p {
+  margin-bottom: 5px;
+}
+#edit_product #edit_product_form .stock .label {
+  margin: 0px;
+  display: flex;
+  width: max-content;
+  margin: auto;
+  margin-bottom: 3px;
+}
+#edit_product #edit_product_form .stock .label p {
+  font-size: 8px;
+  width: 20px;
+  margin: 0px;
+}
+#edit_product #edit_product_form .stock .label .quantity {
+  font-size: 8px;
+  width: 40px;
+  margin: 0px;
+}
+#edit_product #edit_product_form .stock .label input {
+  margin: 0px;
+  margin-right: 10px !important;
+  border-radius: 0px;
+  border: none;
+  height: 13px;
+  width: 50px;
+  border-bottom: solid 1px #b3b3b3;
+}
+#edit_product #edit_product_form p {
+  margin: 0px;
+  font-size: 10px;
+}
+#edit_product #edit_product_form form {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+#edit_product #edit_product_form form .section1 {
+  height: 100%;
+}
+#edit_product #edit_product_form form .section1 .main_picture {
+  background-color: whitesmoke;
+  height: 170px;
+}
+#edit_product #edit_product_form form .section1 i {
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 100px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+#edit_product #edit_product_form form .section1 .selects {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+#edit_product #edit_product_form form .section1 .selects select {
+  height: 30px;
+  border-radius: 0px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+#edit_product #edit_product_form form .section2 {
+  height: 100%;
+  padding-left: 20px;
+}
+#edit_product #edit_product_form form .section2 input[name=name] {
+  border: none;
+  border-radius: 0px;
+  border-bottom: solid whitesmoke;
+  height: 40px;
+  font-size: 30px;
+  width: 100%;
+}
+#edit_product #edit_product_form form .section2 input[name=name]::placeholder {
+  color: #e1e1e1;
+}
+#edit_product #edit_product_form form .section2 .selects {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+#edit_product #edit_product_form form .section2 .selects select {
+  height: 20px;
+  border-radius: 0px;
+  margin-right: 20px;
+}
+#edit_product #edit_product_form form .section2 .genre_radio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#edit_product #edit_product_form form .section2 .genre_radio label {
+  font-size: 12px !important;
+  position: relative;
+  bottom: 2px;
+}
+#edit_product #edit_product_form form .section2 .description {
+  position: relative;
+  bottom: 10px;
+}
+#edit_product #edit_product_form form .section2 .colors {
+  display: flex;
+  flex-wrap: wrap;
+}
+#edit_product #edit_product_form form .section2 .colors .color {
+  height: 15px;
+  width: 15px;
+  border: solid #8f8f8f 1px;
+  margin-left: 4px;
+}
+#edit_product #edit_product_form form .section2 .colors .beige {
+  background-color: #f9cca5;
+}
+#edit_product #edit_product_form form .section2 .colors .blanc {
+  background-color: white;
+}
+#edit_product #edit_product_form form .section2 .colors .bleu {
+  background-color: #2580d0;
+}
+#edit_product #edit_product_form form .section2 .colors .vert {
+  background-color: #3b803b;
+}
+#edit_product #edit_product_form form .section2 .colors .rose {
+  background-color: pink;
+}
+#edit_product #edit_product_form form .section2 .colors .violet {
+  background-color: #9f369f;
+}
+#edit_product #edit_product_form form .section2 .colors .rouge {
+  background-color: #d80a0a;
+}
+#edit_product #edit_product_form form .section2 .colors .jaune {
+  background-color: #fcd254;
+}
+#edit_product #edit_product_form form .section2 .colors .orange {
+  background-color: #f4964a;
+}
+#edit_product #edit_product_form form .section2 .colors .marron {
+  background-color: #a56e2e;
+}
+#edit_product #edit_product_form form .section2 .colors .noir {
+  background-color: black;
+}
+#edit_product #edit_product_form form .section2 .colors .gris {
+  background-color: #8f8f8f;
+}
+#edit_product #edit_product_form form .section2 .colors .or {
+  background: linear-gradient(#ffa824, #ffde3b);
+}
+#edit_product #edit_product_form form .section2 .colors .argent {
+  background: linear-gradient(#9d9d9d, #eaeaea);
+}
+#edit_product #edit_product_form form .section2 .colors .null .line1 {
+  width: 18px;
+  height: 18px;
+  border-bottom: 1px solid red;
+  -webkit-transform: translateY(-9px) translateX(4px) rotate(45deg);
+}
+#edit_product #edit_product_form form .section2 textarea {
+  height: 40px;
+  width: 100%;
+  border-radius: 0px;
+}
+#edit_product #edit_product_form form .section2 p {
+  margin: 0px;
+  margin-top: 20px;
+}
+#edit_product #edit_product_form form .section2 .pics {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 10px;
+}
+#edit_product #edit_product_form form .section2 .pics .min_pic {
+  height: 70px;
+  background-color: whitesmoke;
+  margin-top: 10px;
+}
+#edit_product #edit_product_form form .section2 .pics .min_pic i {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 10px;
+}
+#edit_product #edit_product_form form .section2 .price_submit {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+  position: relative;
+  bottom: 10px;
+}
+#edit_product #edit_product_form form .section2 .price_submit input[name=price] {
+  width: 50px;
+  height: 30px;
+  border-radius: 0px;
+  border: solid 1px;
+  margin-right: 10px;
+}
+#edit_product #edit_product_form form .section2 input[name=delete] {
+  border-radius: 0px;
+  border: none;
+  background-color: #d37566;
+  color: white;
+  font-size: 10px;
+  padding: 5px;
+}
+
+#add_asso {
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#add_asso form {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+#add_asso form .section1 {
+  height: 100%;
+}
+#add_asso form .section1 .main_picture_asso,
+#add_asso form .section1 .main_picture_categorie {
+  background-color: whitesmoke;
+  height: 250px;
+}
+#add_asso form .section1 i {
+  color: white;
+  text-align: center;
+  padding-top: 70px;
+  font-size: 100px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+#add_asso form .section1 .selects {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+#add_asso form .section1 .selects select {
+  height: 30px;
+  border-radius: 0px;
+}
+#add_asso form .section2 {
+  height: 100%;
+  padding-left: 20px;
+}
+#add_asso form .section2 input[name=titleAsso] {
+  border: none;
+  border-radius: 0px;
+  border-bottom: solid whitesmoke;
+  height: 50px;
+  font-size: 30px;
+  width: 100%;
+}
+#add_asso form .section2 input[name=titleAsso]::placeholder {
+  color: #e1e1e1;
+}
+#add_asso form .section2 textarea {
+  height: 80px;
+  width: 100%;
+  border-radius: 0px;
+}
+#add_asso form .section2 p {
+  margin: 0px;
+  margin-top: 20px;
+}
+#add_asso form .section2 .pics {
+  display: flex;
+  justify-content: space-between;
+}
+#add_asso form .section2 .pics .min_pic {
+  height: 70px;
+  background-color: whitesmoke;
+  margin-top: 10px;
+}
+#add_asso form .section2 .pics .min_pic i {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#orders_admin {
+  justify-content: space-between;
+}
+#orders_admin .order_form {
+  display: flex;
+  height: 390px;
+}
+#orders_admin .allProduct {
+  overflow: scroll;
+  border-right: solid 1px #8f8f8f;
+  padding: 5px;
+}
+#orders_admin .allProduct .article {
+  display: flex;
+  border-bottom: solid 1px #8f8f8f;
+  padding: 5px;
+  height: 80px;
+}
+#orders_admin .allProduct .article .info {
+  width: 100%;
+  padding-left: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#orders_admin .allProduct .article .info .order_number {
+  margin: 0px;
+}
+#orders_admin .allProduct .article .info .name {
+  font-size: 10px;
+  margin: 0px;
+}
+#orders_admin .allProduct .article .info .status {
+  border: solid 1px #cbcbcb;
+  font-size: 10px;
+  padding: 2px;
+  width: max-content;
+}
+#orders_admin .allProduct .article .info .articles_ref {
+  font-size: 5px;
+}
+#orders_admin .allProduct .article .info .price {
+  align-self: flex-end;
+  font-size: 10px;
+}
+#orders_admin .allProduct .article .info .edit_button {
+  border: solid #8f8f8f 1px;
+  padding: 2px;
+  font-size: 10px;
+  width: max-content;
+  align-self: flex-end;
+  text-align: center;
+  cursor: pointer;
+}
+#orders_admin #update_order {
+  padding: 10px;
+  height: 390px;
+  overflow: scroll;
+}
+#orders_admin #update_order p {
+  margin: 0px;
+  margin-bottom: 10px;
+}
+#orders_admin #update_order form .section2 {
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#orders_admin #update_order form .section2 .userInfo {
+  border: solid 2px #e1e1e1;
+  font-size: 12px;
+  height: max-content;
+  padding: 10px;
+}
+#orders_admin #update_order form .section2 .userInfo .name {
+  font-weight: 600;
+  margin: 0px;
+}
+#orders_admin #update_order form .section2 .userInfo .adress {
+  margin: 0px;
+  font-size: 10px;
+}
+#orders_admin #update_order form .section2 .selectStatus {
+  display: flex;
+  justify-content: space-between;
+}
+#orders_admin #update_order form .section2 .selectStatus .statusIcon {
+  height: 60px;
+  width: 60px;
+  background-color: #8f8f8f;
+  border-radius: 100px;
+  font-size: 30px;
+  position: relative;
+  padding-top: 12px;
+  color: white;
+  transition-duration: 1s;
+}
+#orders_admin #update_order form .section2 .selectStatus p {
+  font-size: 10px;
+  text-align: center;
+}
+#orders_admin #update_order form .section1 {
+  height: 200px;
+  border: solid 1px #cdcdcd;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: scroll;
+}
+#orders_admin #update_order form .section1 .article {
+  border: solid 1px #cdcdcd;
+  width: 150px;
+  padding: 5px;
+  height: 180px;
+  margin: 10px;
+}
+#orders_admin #update_order form .section1 .article .picture {
+  height: 100px;
+  width: 100%;
+}
+#orders_admin #update_order form .section1 .article .name {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0px;
+}
+#orders_admin #update_order form .section1 .article .quantity {
+  font-size: 10px;
+  margin: 0px;
+  color: #cdcdcd;
+}
+#orders_admin #update_order form .section1 .article .quantity {
+  font-size: 10px;
+  margin: 0px;
+  color: #cdcdcd;
+}
+#orders_admin #update_order form .section1 .article .total {
+  font-size: 12px;
+  margin: 0px;
+  width: 100%;
+  text-align: right;
+  position: relative;
+  bottom: 20px;
+}
+#orders_admin #update_order form .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+#edit_categorie,
+#add_categorie {
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#edit_categorie form,
+#add_categorie form {
+  margin-top: 20px;
+  justify-content: space-between;
+}
+#edit_categorie form .section1,
+#add_categorie form .section1 {
+  height: 100%;
+}
+#edit_categorie form .section1 .main_picture_asso,
+#edit_categorie form .section1 .main_picture_categorie,
+#add_categorie form .section1 .main_picture_asso,
+#add_categorie form .section1 .main_picture_categorie {
+  background-color: whitesmoke;
+  height: 250px;
+}
+#edit_categorie form .section1 i,
+#add_categorie form .section1 i {
+  color: white;
+  text-align: center;
+  padding-top: 70px;
+  font-size: 100px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+#edit_categorie form .section1 .selects,
+#add_categorie form .section1 .selects {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+#edit_categorie form .section1 .selects select,
+#add_categorie form .section1 .selects select {
+  height: 30px;
+  border-radius: 0px;
+}
+#edit_categorie form .section2,
+#add_categorie form .section2 {
+  height: 100%;
+  margin-bottom: 10px;
+}
+#edit_categorie form .section2 input[name=titleCategorie],
+#add_categorie form .section2 input[name=titleCategorie] {
+  border: none;
+  border-radius: 0px;
+  border-bottom: solid whitesmoke;
+  height: 50px;
+  font-size: 30px;
+  width: 100%;
+}
+#edit_categorie form .section2 input[name=titleCategorie]::placeholder,
+#add_categorie form .section2 input[name=titleCategorie]::placeholder {
+  color: #e1e1e1;
+}
+#edit_categorie form .section2 textarea,
+#add_categorie form .section2 textarea {
+  height: 80px;
+  width: 100%;
+  border-radius: 0px;
+}
+#edit_categorie form .section2 p,
+#add_categorie form .section2 p {
+  margin: 0px;
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=StyleAdmin.css.map */

@@ -1,0 +1,211 @@
+$brown :#a56e2e;
+$turquoise :#00bab2;
+$beige :#f9cca5;
+$offwhite :#dac9b5;
+$red :#d37566;
+$grey :#8f8f8f;
+$grey :#cacaca;
+
+$padding :20px;
+
+// ARTICLES
+.showArticles{
+    height: auto;
+    padding-top: 80px;
+   
+
+    .banniere{
+        background-color: $brown;
+        height: 80px;
+
+        .title{
+            margin: auto;
+            width: max-content;
+            background-color: black;
+            position: relative;
+            top: 30px;
+            color: white;
+            font-weight: bold;
+            font-style: italic;
+            padding: 5px;
+        }
+
+    }
+
+    .articles{
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: white;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        .article{
+            display: grid;
+            
+            height: 260px;
+            border: 1px solid #e4e4e4;
+            margin-right: 10px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            -webkit-margin-top-collapse: 10px;
+            .photo_article
+            {
+                height: 180px;
+                margin: 0px;
+                width: auto;
+                background-color: #d37566;
+            }
+         
+            .info{
+                padding: 5px;
+                padding-top: 0px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0px;
+                
+               
+                .name{
+                    font-size: 12px;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                   
+                }
+                .association{
+                    font-size: 8px;
+                    color: rgb(157, 157, 157);
+                    width: 80%;
+                   
+                }
+
+                .country{
+                    font-size: 10px;
+                    color: $grey;
+                    width: 100px;
+            
+                }
+
+                .price{
+                    font-size: 12px;
+                    align-self: right;
+                    text-align: right;
+                
+                    width: 20%;
+                }
+            }
+
+
+            // LOADING PAGE
+            .photo_article_loading{
+                height: 200px;
+                width: auto;
+                background-image: url('../IMG/Shop/hii.gif');
+                background-size: cover;
+                background-size: 50%;
+                background-repeat: no-repeat;
+                background-color: rgb(235, 235, 235);
+                background-position: center;
+            }
+            .info_loading{
+                padding: 5px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+               
+                .name_loading{
+                    background-color: rgb(235, 235, 235);
+                    height: 10px;
+                    position: relative;
+                    bottom: 5px;
+                }
+                .association_loading{
+                    background-color: rgb(235, 235, 235);
+                    height: 10px;
+                }
+
+                .price_loading{
+                    background-color: rgb(235, 235, 235);
+                    height: 10px;
+                }
+            }
+        }
+    }
+
+    .fake_pic{
+        height: 200px;
+        width: 200px;
+        border: solid;
+    }
+}
+
+
+
+
+// CATEGORIES
+.showCategories{
+    height: auto;
+    padding-top: 80px;
+   
+
+    .banniere{
+        background-color: $brown;
+        height: 80px;
+
+        .title{
+            margin: auto;
+            width: max-content;
+            background-color: black;
+            position: relative;
+            top: 30px;
+            color: white;
+            font-weight: bold;
+            font-style: italic;
+            padding: 5px;
+        }
+
+    }
+
+    .article{
+        .info{
+            border: solid;
+        }
+    }
+    .categories{
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 15px;
+        padding-top: 15px;
+
+        .categorie{
+            display: grid;
+            
+            height: 170px;
+            border: 1px solid #e4e4e4;
+            background-color: $turquoise;
+            margin-right: 10px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            -webkit-margin-top-collapse: 10px;
+            .categorieText{
+                
+                height: 100%;
+                width: 100%;
+                transition-duration: 1s;
+                background-color: rgba(0, 0, 0, 0);
+                color: rgba(255, 255, 255, 0);
+                text-align: center;
+                padding-top: 70px;
+            }
+
+            &:hover{
+                .categorieText{
+                    color: white;
+                    background-color: rgba(0, 0, 0, 0.564);
+                }
+            }
+        }
+    }
+}
